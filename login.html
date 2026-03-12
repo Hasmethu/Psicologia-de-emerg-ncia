@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css" />
+    <style>
+        *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .bg-img {
+        height: 100vh;
+        width: 100vw;
+        object-fit: cover;
+        filter: brightness(0.6);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index:-1;
+      }
+      #emailHelp {
+        color: aliceblue;
+      }
+      #btn1 {
+        background-color: #A65E1F;
+      }
+      #btn2 {
+        background-color: #62736B;
+      }
+      #term {
+        color: aliceblue;
+      }
+      #em {
+        color: #FFFF;
+      }
+      #pass {
+        color: #FFFF;
+      }
+    </style>
+</head>
+<body>
+    <img class="bg-img" src="images/serio.jpg" alt="Bg images">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 mt-5">
+                <form>
+  <div class="col-lg-8 mb-3" align="center">
+    <label id="em" for="exampleInputEmail1" class="form-label"><i class="fa-solid fa-envelope"> E-mail</i></label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div id="emailHelp" class="form-text">Nós nunca divulgaremos seus dados.</div>
+  </div>
+  <div class="col-lg-8 mb-3" align="center">
+    <label id="pass" for="exampleInputPassword1" class="form-label"><i class="fa-solid fa-lock"> Senha</i></label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="mb-3 form-check" >
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label id="term" class="form-check-label" for="exampleCheck1">Aceito os termos de serviço</label>
+  </div>
+        </form><div class="col-lg-8 mt-5" align="center"><a href="agendamento.html" id="btn1" class="btn btn-primary btn-dark">Login</a></div>
+</form>
+            </div>
+        </div>
+        <div class="row">
+                <div class="col-lg-12 mt-5"><a href="index.html" id="btn2" class="btn btn-primary btn-dark">Voltar</a></div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+</body>
+</html>

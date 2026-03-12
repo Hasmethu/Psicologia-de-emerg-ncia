@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamento</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <style>
+        *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .bg-img {
+        height: 400vh;
+        width: 100vw;
+        object-fit: cover;
+        filter: brightness(0.6);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index:-1;
+      }
+      #con{
+        background-color: #62736B;
+      }
+      #can{
+        background-color: #8C241B;
+      }
+      #tit{
+        color: #FFFF;
+      }
+    </style>
+</head>
+<body>
+    <img class="bg-img" src="images/serio.jpg" alt="Bg images">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+            <h1>Seja Bem-vindo!!!</h1>
+            <select class="form-select" aria-label="Default select example">
+            <option selected>Selecione seu plano</option>
+            <option value="1">Quality gold</option>
+            <option value="2">Bradesco</option>
+            <option value="3">Amil</option>
+            <option value="4">Sul-América</option>
+            <option value="5">Outro</option>
+            </select>
+            </div> 
+        </div>
+        <div class="row mt-3">
+            <div class="col-lg-12">
+                <input type="date" id="date" name="date">
+                <label>Selecione a data do agendamento</label>
+        </div>
+        <div class="row mt-3">
+                <div class="col-lg-12"><input
+                type="time"
+                id="appointment"
+                name="appointment"
+                min="09:00"
+                max="19:30"
+                required />
+            <label>Selecione o horário</label>
+            </div>
+        </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12 mt-3" >
+            <a href="confirmar.html" class="btn btn-primary btn-dark" id="con">Confirmar</a>
+            </div>
+        <div class="row">
+            <div class="col-lg-12 mt-4">
+            <a href="index.html" class="btn btn-dark" id="can">Cancelar</a>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+</body>
+</html>

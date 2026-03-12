@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>S.O.S Mente</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      #so{
+        font-family: "Bebas Neue", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 3rem;
+        color: #8C241B;
+      }
+      .navbar-nav{
+        font-weight: 400;
+        font-size: 1.5rem;
+      }
+      .bg-img {
+        height: 400vh;
+        width: 100vw;
+        object-fit: cover;
+        filter: brightness(0.6);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index:-1;
+      }
+      #cor{
+        background-color:#62736B;
+        border-radius: 20px;
+      }
+      .card-body{
+        background-color:#A67153;
+        box-shadow: 0 4px 8px 0;
+      }
+      .card{
+        background-color:#A67153;
+        box-shadow: 0 4px 8px 0;
+      }
+      .btn{
+        background-color:#8C241B;
+      }
+      #lab{
+        color: #D9CBBA;
+      }
+      #tex{
+        color: #D9CBBA;
+      }
+      #text{
+        color: #2f2f2f;
+      }
+      #noss{
+        padding: 10px;
+        border: 5px solid gray;
+        border-radius: 20px;
+        margin: 0;
+        background: gray;
+        color: #FFFF;
+        box-shadow: 0 4px 8px 0;
+      }
+      #car{
+        padding: 10px;
+        border: 5px solid #A67153;
+        border-radius: 20px;
+        margin: 0;
+        background: #A67153;
+        box-shadow: 0 4px 8px 0;
+      }
+      #g{
+        color: #D9CBBA;
+      }
+    </style>
+  </head>
+  <body>
+    <img class="bg-img" src="images/serio.jpg" alt="Bg images">
+    <div class="container" align="center">
+      <div class="row">
+        <div id="so" class="col-lg-12"><i class="fa-solid fa-heart-pulse"> S.O.S  Mente </i></div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12 mt-2 container-fluid" align="center" >
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+      <nav class="navbar navbar-expand-lg navbar-light">
+  <div id="cor" class="navbar-collapse collapse d-flex justify-content-center container-fluid" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link active" href="#top">Home |</a> 
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="#nos">Quem somos? |</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Abordagens
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#text">TCC</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="#text">Psicanálise</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="#text">Terapia Sistêmica</a></li>
+          <li><hr class="dropdown-divider"></li>
+          <li><a class="dropdown-item" href="#text">Análise do Comportamento</a></li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="#contact">| Contato</a>
+      </li>
+    </ul>
+   </div>
+ </nav>
+ </div>
+ </div>
+ <br>
+ <br>
+ <br>
+ <br>
+  <div class="row">
+    <div class="col-lg-8 mt-2">
+      <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+  <div id="car" class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/10.png" class="d-block w-100" width="800" height="400">
+    </div>
+    <div class="carousel-item">
+      <img src="images/11.jpg" class="d-block w-100" width="800" height="400">
+    </div>
+    <div class="carousel-item">
+      <img src="images/12.jpg" class="d-block w-100" width="800" height="400">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+ </div>
+    </div>
+      <div id="card" class="col-lg-4 mt-5">
+        <div class="card text-center">
+          <div class="card-body">
+    <h5 class="card-title">Agendamento de consultas</h5>
+    <p class="card-text" id="g">Marque sua consulta pelo +55 (61) 99905-4720, fale conosco pelo nosso  Whatsapp ou.</p>
+    <a href="login.html" class="btn btn-dark">Agende on-line agora</a>
+  </div>
+ </div>
+      </div>
+ </div>
+ <br>
+ <br>
+ <br>
+ <br>
+  <div class="row mt-2">
+    <div class="col-lg-3">
+      <div class="card">
+  <div class="card-body">
+    <h5 id="text" class="card-title">Terapia Sistêmica</h5>
+    <p id="tex" class="card-text">Olha para você dentro das suas relações, entendendo como sua história, sua família e seus vínculos impactam sua vida, e busca fortalecer esses laços de forma saudável.</p>
+  </div>
+  <img src="images/4.jpg" width="100" height="185" class="card-img-bottom" alt="...">
+</div>
+    </div>
+    <div class="col-lg-3">
+      <div class="card">
+  <div class="card-body">
+    <h5 id="text" class="card-title">Psicanálise</h5>
+    <p id="tex" class="card-text">Um mergulho no inconsciente para compreender emoções, padrões e vivências que, muitas vezes, vêm da infância. Acolhe, ressignifica e promove autoconhecimento.</p>
+  </div>
+  <img src="images/5.jpg" width="100" height="185" class="card-img-bottom" alt="...">
+</div>
+    </div>
+    <div class="col-lg-3">
+      <div class="card">
+  <div class="card-body">
+    <h5 id="text" class="card-title">TCC</h5>
+    <p id="tex" class="card-text">Ajuda a entender como nossos pensamentos influenciam sentimentos e comportamentos. Com ferramentas práticas, promove mudanças no presente e mais qualidade de vida..</p>
+  </div>
+  <img src="images/6.jpg" width="100" height="185" class="card-img-bottom" alt="...">
+</div>
+    </div>
+    <div class="col-lg-3">
+      <div class="card">
+  <div class="card-body">
+    <h5 id="text" class="card-title">Análise do Comportamento</h5>
+    <p id="tex" class="card-text">Observa como o ambiente influencia os comportamentos. Usa reforços e estratégias para desenvolver habilidades e promover mudanças, especialmente no TEA e no desenvolvimento infantil.</p>
+  </div>
+  <img src="images/7.jpg" width="100" height="160" class="card-img-bottom" alt="...">
+</div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+    <div class="row">
+      <div class="col-lg-8 mt-5">
+        <br>
+        <br>
+        <h1 id="nos">Quem somos nós?</h1>
+        <p id="noss">Cuidar da saúde mental é um ato de coragem, e foi pensando nisso que nasceu S.O.S MENTE. Nosso propósito é oferecer um espaço seguro, acolhedor e acessível para quem busca apoio psicológico, autoconhecimento e bem-estar.
+          Acreditamos que cada pessoa é única e carrega uma história que merece ser escutada com empatia, ética e respeito. Nossa atuação é baseada em princípios de responsabilidade, acolhimento e comprometimento com a saúde emocional de nossos pacientes.
+          Oferecemos atendimentos psicológicos 100% online, pensados para atender às demandas da vida moderna, com praticidade, segurança e sigilo. Trabalhamos com profissionais qualificados e comprometidos em proporcionar um espaço de escuta, reflexão e desenvolvimento pessoal.
+          Aqui, entendemos que o cuidado com a mente não tem fronteiras. Nosso compromisso é caminhar ao seu lado, te apoiando na construção de uma vida mais leve, consciente e saudável.
+        Seja bem-vindo(a) ao nosso espaço de cuidado e transformação.</p>
+      </div>
+    </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div id="contact" class="row">
+    <div class="col-lg-4">
+      <div class="mb-3">
+        <label id="lab" for="exampleFormControlInput1" class="form-label">Insira seu e-mail</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+      </div>
+      <div class="mb-3">
+        <label id="lab" for="exampleFormControlTextarea1" class="form-label">Nos envie uma mensagem</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Sua mensagem aqui"></textarea>
+        <a href="#" class="btn btn-dark mt-3">Enviar</a>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12"><p>&copy; Copyright 2025 S.O.S Mente</p></div>
+  </div>
+</div>
+    <script type="text/javascript" src="js/bootstrap.bundle.js"></script>
+  </body>
+</html>
